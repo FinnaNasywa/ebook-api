@@ -21,3 +21,24 @@ Route::get('coba', function(){
     return "halo gan";
 });
 
+Route::get('coba1', function(){
+    return ['Fiony', 'Eve', 'Olla'];
+});
+
+Route::get('coba2', function(){
+    return [
+        'Nama'=> 'Nasywa Nur Shafinna',
+        'Kelas' => 'XII RPL 5',
+        'NIS' => '3103120159'
+    ];
+});
+
+Route::get('coba3', function(){
+    return response()-> json(
+        [
+            'Nama'=> 'Nasywa Nur Shafinna',
+            'Kelas' => 'XII RPL 5',
+            'NIS' => '3103120159'
+        ],201
+    );
+});
